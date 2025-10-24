@@ -54,7 +54,7 @@
     "dispatch_namespaces": [
         {
             "binding": "DISPATCHER",
-            "namespace": "vibesdk-default-namespace",
+            "namespace": "qik-default-namespace",
             "remote": true
         }
     ],

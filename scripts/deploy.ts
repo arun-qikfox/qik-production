@@ -1554,7 +1554,7 @@ class CloudflareDeploymentManager {
 	 * Deploys the project using Wrangler
 	 */
 	private async wranglerDeploy(): Promise<void> {
-		console.log('🚀 Deploying to Cloudflare Workers...');
+		console.log('🚀 Deploying Workers...');
 
 		try {
 			execSync('wrangler deploy', {
@@ -2002,7 +2002,7 @@ class CloudflareDeploymentManager {
 			let deploymentSucceeded = false;
 			try {
 				// Step 5: Deploy with Wrangler (now without conflicts)
-				console.log('\n📋 Step 5: Deploying to Cloudflare Workers...');
+				console.log('\n📋 Step 5: Deploying Workers...');
 				await this.wranglerDeploy();
 
 				// Step 6: Update secrets (now no conflicts)

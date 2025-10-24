@@ -1832,10 +1832,10 @@ export class SimpleCodeGeneratorAgent extends Agent<Env, CodeGenState> {
      */
     async deployToCloudflare(): Promise<{ deploymentUrl?: string; workersUrl?: string } | null> {
         try {
-            this.logger().info('Starting Cloudflare deployment');
+            this.logger().info('Starting deployment');
             await this.waitForPreview();
             this.broadcast(WebSocketMessageResponses.CLOUDFLARE_DEPLOYMENT_STARTED, {
-                message: 'Starting deployment to Cloudflare Workers...',
+                message: 'Starting deployment ...',
                 instanceId: this.state.sandboxInstanceId,
             });
 

@@ -556,7 +556,7 @@ export function createWebSocketMessageHandler(deps: HandleMessageDeps) {
                 
                 sendMessage({
                     id: 'cloudflare_deployment_completed',
-                    message: `Your project has been permanently deployed to Cloudflare Workers: ${message.deploymentUrl}`,
+                    message: `Your project has been permanently deployed: ${message.deploymentUrl}`,
                 });
                 
                 onDebugMessage?.('info', 
